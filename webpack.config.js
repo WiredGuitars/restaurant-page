@@ -6,10 +6,23 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    devServer: {
-        contentBase: './dist', // The directory to serve as the base location
-        port: 8080, // The port number for the development server
-        open: true, // Open the project in the default browser automatically
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        type: 'asset/resource',
+      },
+    ],
+  },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    open: true,
   },
 };

@@ -1,20 +1,25 @@
 body{
-    background-color: grey;
+    background-color: rgb(39, 39, 39);
     margin: 0px;
 }
-#nav-bar{
+#mainContainer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+#navBar{
     display: flex;
     border-bottom: solid 1px rgb(0, 0, 0);
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(30, 30, 30);
     padding: 10px 10px;
     width: 100vw;
 }
-.button-div{
+#buttonDiv{
     display: flex;
     justify-content: space-around;
     width: 100vw;
 }
-.buttons{
+#buttons{
   border: none;
   outline: none;
   background: none;
@@ -22,6 +27,33 @@ body{
   margin: 0; 
   font-size: 35px;
 }
-.buttons:hover{
-    background-color: rgb(88, 88, 88);
+#buttons:hover{
+    background-color: rgb(27, 27, 27)
+}
+.str{
+    color: red;
+}
+.agi{
+    color:rgb(15, 138, 15)
+}
+.int{
+    color: rgb(16, 16, 197);
+}
+.uni{
+    color: purple;
+}
+#homeMessage{
+    margin-top: 20px;
+}
+#mainImages{
+    display: grid;
+    align-self: center;
+    margin-top: 20px;
+    height: 100px;
+    border: 1px solid blue;
+    grid-template-columns: repeat(6, 105px);
+}
+.heroDisplay{
+    display: grid;
+    border: 1px solid blue;
 }
