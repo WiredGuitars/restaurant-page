@@ -46,14 +46,18 @@ body{
     margin-top: 20px;
 }
 #mainImages{
-    display: grid;
+    display: flex;
     align-self: center;
     margin-top: 20px;
-    height: 100px;
-    border: 1px solid blue;
-    grid-template-columns: repeat(6, 105px);
 }
 .heroDisplay{
-    display: grid;
-    border: 1px solid blue;
+}
+img{
+    display: flex;
+    flex: 1 1 auto;
+    border: 1px blue solid;
+    border-right: none;
+}
+#broodLast{
+    border-right: 1px solid blue;
 }
