@@ -2,11 +2,17 @@ body{
     background-color: rgb(39, 39, 39);
     margin: 0px;
     color: white;
+    margin: 0px;
+    
 }
 #mainContainer{
     display: flex;
     text-align: center;
     flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    flex: 1 0 auto;
+    overflow-x: hidden;
 }
 #navBar{
     display: flex;
@@ -29,7 +35,7 @@ body{
   font-size: 35px;
 }
 #buttons:hover{
-    background-color: rgb(27, 27, 27)
+    background-color: rgb(94, 93, 93)
 }
 .str{
     color: red;
@@ -49,14 +55,17 @@ body{
 #mainImages{
     display: grid;
     justify-content: center;
-    margin-top: 20px;
     grid-template-columns: repeat(auto-fit, 104px);
     grid-template-rows: repeat(auto-fit, 102px);
+    margin-top: 30px;
 }
 
 .heroDisplay{
     border: 1px blue solid;
-    width: 105px;
+    width: 103px;
     height: 102px;
     box-sizing: border-box;
+}
+#footer{
+    margin-top: auto;
 }
