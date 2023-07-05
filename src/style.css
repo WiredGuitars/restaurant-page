@@ -1,6 +1,7 @@
 body{
     background-color: rgb(39, 39, 39);
     margin: 0px;
+    color: white;
 }
 #mainContainer{
     display: flex;
@@ -46,18 +47,16 @@ body{
     margin-top: 20px;
 }
 #mainImages{
-    display: flex;
-    align-self: center;
+    display: grid;
+    justify-content: center;
     margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, 104px);
+    grid-template-rows: repeat(auto-fit, 102px);
 }
+
 .heroDisplay{
-}
-img{
-    display: flex;
-    flex: 1 1 auto;
     border: 1px blue solid;
-    border-right: none;
-}
-#broodLast{
-    border-right: 1px solid blue;
+    width: 105px;
+    height: 102px;
+    box-sizing: border-box;
 }
